@@ -1,5 +1,5 @@
 <script>
-    import CardOverview from "$lib/components/CardOverview.svelte"
+    import CardOverview from "$lib/components/Cardoverview.svelte"
 
     export let data;
 
