@@ -6,7 +6,7 @@
     console.log('Data:', data);
 </script>
 
-<!-- <section class="card-layout">  -->
+<section class="card-layout"> 
     <LayoutView />
 
     <WishOverview {data} />
