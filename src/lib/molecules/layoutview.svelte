@@ -35,10 +35,12 @@
 <nav id="nav">
     <!-- Weergave van layout voor wensen -->
     <div class="layout-view">
+                <!-- De knop die zorgt dat de weergave overgaat op rasterweergave -->
         <button id="gridSwitch">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"><path fill="" fill-rule="evenodd" d="M3.429 0H8.57A3.429 3.429 0 0 1 12 3.429V8.57A3.429 3.429 0 0 1 8.571 12H3.43A3.429 3.429 0 0 1 0 8.571V3.43A3.429 3.429 0 0 1 3.429 0Zm0 2.571a.857.857 0 0 0-.858.858V8.57c0 .474.384.858.858.858H8.57a.857.857 0 0 0 .858-.858V3.43a.857.857 0 0 0-.858-.858H3.43ZM17.429 0h5.142A3.429 3.429 0 0 1 26 3.429V8.57A3.429 3.429 0 0 1 22.571 12H17.43A3.429 3.429 0 0 1 14 8.571V3.43A3.429 3.429 0 0 1 17.429 0Zm0 2.571a.857.857 0 0 0-.858.858V8.57c0 .474.384.858.858.858h5.142a.857.857 0 0 0 .858-.858V3.43a.857.857 0 0 0-.858-.858H17.43ZM3.429 14H8.57A3.429 3.429 0 0 1 12 17.429v5.142A3.429 3.429 0 0 1 8.571 26H3.43A3.429 3.429 0 0 1 0 22.571V17.43A3.429 3.429 0 0 1 3.429 14Zm0 2.571a.857.857 0 0 0-.858.858v5.142c0 .474.384.858.858.858H8.57a.857.857 0 0 0 .858-.858V17.43a.857.857 0 0 0-.858-.858H3.43ZM17.429 14h5.142A3.429 3.429 0 0 1 26 17.429v5.142A3.429 3.429 0 0 1 22.571 26H17.43A3.429 3.429 0 0 1 14 22.571V17.43A3.429 3.429 0 0 1 17.429 14Zm0 2.571a.857.857 0 0 0-.858.858v5.142c0 .474.384.858.858.858h5.142a.857.857 0 0 0 .858-.858V17.43a.857.857 0 0 0-.858-.858H17.43Z" clip-rule="evenodd"/></svg>
                 <span hidden>Schakel over op rasterweergave</span>
         </button>
+        <!-- De knop die zorgt dat de weergave overgaat op lijstweergave -->
         <button id="listSwitch">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" fill="none"
                 ><rect width="24" height="4" x="8" fill="" rx="2" /><rect
@@ -81,8 +83,6 @@
 		flex-direction: row;
 		gap: var(--unit-small);
 	}
-
-    
 
     /* Layout button instellingen */
     nav .layout-view button {

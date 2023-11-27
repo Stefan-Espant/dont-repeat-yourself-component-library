@@ -2,6 +2,7 @@
     import WishHeading from '$lib/atoms/wishheading.svelte'
     import WishImage from '$lib/atoms/wishimage.svelte'    
 
+    // Haalt de data op en verwijst het door naar dit bestand
     export let data
 </script>
 
@@ -10,8 +11,11 @@
         <ul>
             {#each data.wishes as wish}
                 <li>
+                    <!-- Laadt de dynamische afbeelding atoom in -->
                     <WishImage {wish} />
+                    <!-- Stuurt de gebruiker naar de wens via een dynamisch pad -->
                     <a href="/{wish.url}">
+                        <!-- Laadt de dynamische titel atoom in -->
                         <WishHeading {wish} />
                     </a>
                 </li>
