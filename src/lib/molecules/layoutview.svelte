@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import { filteredResults } from '$lib/components/cardoverview.svelte';
+    // import { filteredResults } from '$lib/components/cardoverview.svelte';
   
     onMount(() => {
       let jsEnabled = true;
