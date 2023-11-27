@@ -1,5 +1,6 @@
 <script>
 	import NavLogo from '../atoms/navLogo.svelte';
+	import Link from '../atoms/navLink.svelte';
 
 	let mobileDropdownActive = true;
 
@@ -15,11 +16,10 @@
 		<ul>
 			<button class="Menu" on:click={openMobileMenu}>Menu</button>
 			{#if mobileDropdownActive}
+				<Link href="/berichten">berichten</Link>
+                
 				<li>
-					<div><a class="nav-link" href="/Berichten">Berichten</a></div>
-				</li>
-				<li>
-					<div><a class="nav-link" href="/Activiteiten">Activiteiten</a></div>
+					<a class="nav-link" href="/Activiteiten">Activiteiten</a>
 				</li>
 				<li>
 					<a class="nav-link" href="/Over Strandeiland">Over Strandeiland</a>
