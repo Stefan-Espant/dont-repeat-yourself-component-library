@@ -1,0 +1,83 @@
+:root {
+    /* Animaties */
+    --animation-default: 0.2s;
+
+    /* Eenheden */
+    --unit-deca: 10rem;
+    --unit-large: 2rem;
+    --unit-default: 1rem;
+    --unit-small: 0.5rem;
+    --unit-micro: 0.25rem;
+    --unit-nano: 0.125rem;
+    --unit-pico: .5px;
+
+    /* Kleuren */
+    --color-primary: #121212;
+    --color-primary-50: #495057;
+    --color-secundary: #f7f7f7;
+    --color-secundary-pure: #fff;
+    --color-accent-100: #aaa;
+    --color-accent-75: #f0eded;
+    --color-accent-50: #f0f0eb;
+    --color-blue: #0594c6;
+
+    /* Schaduwen  */
+    --shadow-default: 0px 2px 8px rgba(135, 135, 135, 0.1), 0px 4px 4px -2px rgba(135, 135, 135, 0.12), 0px 8px 16px -4px rgba(0, 0, 0, 0.2);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-accent-50);
+}
+
+/* Interactief */
+
+a:hover, button:hover, input:hover {
+    cursor: pointer;
+}
+
+input[type="search"]:hover {
+    cursor: inherit;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: var(--unit-micro);
+    border: unset;
+    border-radius: var(--unit-micro);
+    padding: var(--unit-micro) var(--unit-default) var(--unit-micro) 0.8em;
+    transition: 0.2s ease-in-out;
+}
+button:is(:hover, :focus) {
+    background-color: var(--color-blue);
+    color: var(--color-secundary);
+}
+a:focus-visible, button:focus-visible {
+    border: var(--unit-pico) solid var(--color-primary);
+    background-color: inherit;
+    color: var(--color-primary);
+    outline: unset;
+}
+
+/* Typografie */
+
+mark {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: var(--unit-small);
+    padding: var(--unit-small);
+    background-color: var(--color-secundary-pure);
+    border: 1px solid var(--color-accent-50);
+    color: var(--color-primary-50);
+}
