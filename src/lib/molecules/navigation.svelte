@@ -11,7 +11,7 @@
 
 <section>
 	<nav class="nav-bar">
-		<NavLogo></NavLogo>
+		<NavLogo />
 
 		<ul>
 			<button class="Menu" on:click={openMobileMenu}>Menu</button>

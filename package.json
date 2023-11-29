@@ -17,8 +17,5 @@
 		"svelte": "^4.2.7",
 		"vite": "^4.4.2"
 	},
-	"type": "module",
-	"dependencies": {
-		"graphql-request": "^6.1.0"
-	}
+	"type": "module"
 }
