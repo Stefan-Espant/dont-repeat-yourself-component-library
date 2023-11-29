@@ -8,7 +8,7 @@
 </script>
 
 <section class="card-layout">
-    <LayoutView {filteredResults} />
+    <LayoutView {filteredResults} {searchInput} {searchWishes} />
     <ul>
         <WishOverview {data} {filteredResults} />
     </ul>

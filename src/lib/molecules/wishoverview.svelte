@@ -3,7 +3,6 @@
     import WishImage from '$lib/atoms/wish-image.svelte'    
 
     export let wish
-    console.log(wish)
 </script>
 
 <li>
@@ -112,7 +111,7 @@
     }
 
     @media (min-width: 440px) {
-        .grid-overview ul {
+        .grid-overview  ul {
             grid-template-columns: 1fr 1fr;
         }
     }

@@ -96,6 +96,10 @@ nav figcaption {
     visibility: hidden;
 }
 
+#custom-view {
+    transition: var(--animation-default) ease-in-out;
+}
+
 /* Wensen in rasterweergave */
 .grid-overview article {
     display: grid;
@@ -104,22 +108,21 @@ nav figcaption {
 }
 
 /* Wensen in lijstweergave */
-.list-overview {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.list-overview article {
+.list-overview article li {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    gap: var(--unit-large);
+    padding: var(--unit-small);
     margin-bottom: var(--unit-default);
     border-bottom: 2px solid var(--color-accent-75);
 }
 
-.list-overview article article ul li {
-    gap: var(--unit-large);
+.list-overview ul li img {
+    width: clamp(8rem, 100%, 10rem);
 }
+
+
 
 @media (min-width: 440px) {
     .grid-overview article {
@@ -137,5 +140,10 @@ nav figcaption {
     .grid-overview article {
         grid-template-columns: 1fr 1fr 1fr;
         margin: auto;
+    }
+
+    nav figcaption {
+        width: fit-content;
+        visibility: visible;
     }
 }

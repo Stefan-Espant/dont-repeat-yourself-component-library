@@ -29,21 +29,9 @@
         customView.classList.add('grid-overview');
       });
 
-      let searchInput = null;
-        let filteredWishes = data.wishes;
-
-        // Functie om te zoeken
-        function searchWishes() {
-            const searchTerm = searchInput.value.toLowerCase();
-            filteredWishes = data.wishes.filter((wish) => wish.heading.toLowerCase().includes(searchTerm));
-            // Update filteredResults in the parent component (cardoverview.svelte)
-            filteredResults = filteredWishes;
-        }
     });
 
     export let data;
-    export let filteredResults;
-
   </script>
   
 <nav id="nav">
@@ -76,7 +64,7 @@
                 <span>Schakel over op lijstweergave</span>
         </button>
     </div>
-    <SearchBar {filteredResults} />
+    <SearchBar {data} />
 </nav>
 
 <style>
