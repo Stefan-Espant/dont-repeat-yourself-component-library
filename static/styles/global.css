@@ -107,6 +107,10 @@ nav figcaption {
     gap: var(--unit-default);
 }
 
+.grid-overview li {
+    width: 20rem;
+}
+
 /* Wensen in lijstweergave */
 .list-overview article li {
     display: grid;
@@ -131,9 +135,15 @@ nav figcaption {
 }
 
 @media (min-width: 500px) {
+    main {
+        width: 50rem;
+    }
+
     .list-overview article li {
         grid-template-columns: 12rem 1fr;
-    }   
+        height: fit-content;
+        width: auto;
+      }
 }
 
 @media (min-width: 628px) {
