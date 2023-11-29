@@ -25,7 +25,7 @@
         display: flex;
         flex-direction: row;
         gap: var(--unit-small);
-        width: 100%;
+        width: 33vw;
         background-color: var(--color-secundary);
         border: var(--unit-nano) solid var(--color-accent-50);
         border-radius: var(--unit-small);

@@ -9,7 +9,9 @@
 
 <section class="card-layout">
     <LayoutView {filteredResults} />
-    <WishOverview {data} {filteredResults} />
+    <ul>
+        <WishOverview {data} {filteredResults} />
+    </ul>
 </section>
 
 <style>

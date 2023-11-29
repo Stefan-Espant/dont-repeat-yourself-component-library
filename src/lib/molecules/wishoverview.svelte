@@ -1,35 +1,85 @@
 <script>
-    import WishHeading from '$lib/atoms/wishheading.svelte'
-    import WishImage from '$lib/atoms/wishimage.svelte'    
+    import WishHeading from '$lib/atoms/wish-heading.svelte'
+    import WishImage from '$lib/atoms/wish-image.svelte'    
 
-    export let data
+    export let wish
+    console.log(wish)
 </script>
 
-<article id="custom-view" class="grid-overview">
-    {#if data && data.wishes && data.wishes.length > 0}
-        <ul>
-            {#each data.wishes as wish}
-                <li>
-                    <WishImage {wish} />
-                    <a href="/{wish.url}">
-                        <WishHeading {wish} />
-                    </a>
-                </li>
-            {/each}
-        </ul>
-    {:else}
-        <p>Geen wensen gevonden.</p>
-    {/if}
-</article>
+<li>
+    <WishImage {wish} />
+    <a href="wens/{wish.id}">
+        <WishHeading {wish} />
+    </a>
+    <p>Geplaatst op: {wish.date}</p>
+    <p>Supporters: <span>4</span></p>
+</li>
 
 <style>
+    	/* Stefan overzichtspagina */
+	li {
+		width: 20rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 20rem 1fr;
+		padding: var(--unit-default);
+		border-radius: var(--unit-small);
+		background-color: var(--color-secundary);
+		animation: fade-in var(--animation-default) ease-in-out;
+	}
 
-    li {
+	/* li div {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	} */
+
+	li a {
+        width: fit-content;
+        height: fit-content;
+		color: var(--color-primary-50);
+        padding: var(--unit-micro);
+		transition: var(--animation-default) ease-in-out;
+        border-radius: var(--unit-micro);
+        margin-bottom: var(--unit-default);
+	}
+
+	li a:is(:hover, :focus) {
+		color: var(--color-secundary-pure);
+		background-color: var(--color-blue);
+	}
+
+	li img {
+		width: 100%;
+		height: 20rem;
+		object-fit: cover;
+		margin-bottom: var(--unit-default);
+		background-color: var(--color-primary-50);
+		border-radius: var(--unit-micro);
+	}
+
+	li h2 {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		margin: var(--unit-default) 0 var(--unit-small);
+	}
+
+	time {
+		display: flex;
+		align-items: center;
+		gap: var(--unit-small);
+		margin-bottom: var(--unit-default);
+	}
+
+    /* li {
 		background-color: var(--color-secundary);
 		border: 2px solid var(--color-accent-75);
 		border-radius: var(--unit-small);
         padding: var(--unit-small);
-    }
+    } */
 
     /* Inhoud met wensen in lijstweergave */
     .list-overview ul li {
