@@ -6,7 +6,7 @@
     import { onMount } from 'svelte';
   
     export let data;
-  
+
     // Functie om te zoeken
     let searchInput = null;
     let filteredWishes = data.wishes;
@@ -127,7 +127,9 @@
 	@keyframes fade-in {
 		from {
 			opacity: 0;
-			transform: translateY(var(--unit-default)); /* Optioneel: voeg een lichte verticale verschuiving toe */
+			transform: translateY(
+				var(--unit-default)
+			); /* Optioneel: voeg een lichte verticale verschuiving toe */
 		}
 		to {
 			opacity: 1;
