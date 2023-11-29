@@ -16,29 +16,31 @@
 		<ul>
 			<button class="Menu" on:click={openMobileMenu}>Menu</button>
 			{#if mobileDropdownActive}
-				<Link href="/berichten">berichten</Link>
-                
-				<li>
-					<a class="nav-link" href="/Activiteiten">Activiteiten</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/Over Strandeiland">Over Strandeiland</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/Planning">Planning</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/Participatieteam">Participatieteam</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/Personen">Personen</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/Organisaties">Organisaties</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/Wensen">Wensen</a>
-				</li>
+				{#each Link as Item}
+					<Link href="/berichten"></Link>
+
+					<li>
+						<a class="nav-link" href="/Activiteiten">Activiteiten</a>
+					</li>
+					<li>
+						<a class="nav-link" href="/Over Strandeiland">Over Strandeiland</a>
+					</li>
+					<li>
+						<a class="nav-link" href="/Planning">Planning</a>
+					</li>
+					<li>
+						<a class="nav-link" href="/Participatieteam">Participatieteam</a>
+					</li>
+					<li>
+						<a class="nav-link" href="/Personen">Personen</a>
+					</li>
+					<li>
+						<a class="nav-link" href="/Organisaties">Organisaties</a>
+					</li>
+					<li>
+						<a class="nav-link" href="/Wensen">Wensen</a>
+					</li>
+				{/each}
 			{/if}
 		</ul>
 	</nav>

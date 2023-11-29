@@ -1,5 +1,5 @@
 <script>
-	import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
+	import Navbar from '../lib/molecules/navigation.svelte';
 	import { onMount } from 'svelte';
 
 	export let data;
@@ -456,7 +456,9 @@
 	@keyframes fade-in {
 		from {
 			opacity: 0;
-			transform: translateY(var(--unit-default)); /* Optioneel: voeg een lichte verticale verschuiving toe */
+			transform: translateY(
+				var(--unit-default)
+			); /* Optioneel: voeg een lichte verticale verschuiving toe */
 		}
 		to {
 			opacity: 1;
