@@ -81,3 +81,9 @@ mark {
     border: 1px solid var(--color-accent-50);
     color: var(--color-primary-50);
 }
+
+/* Dropdown personen component  */
+
+.hide {
+    display: none;
+  }
