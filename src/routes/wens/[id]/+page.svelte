@@ -1,5 +1,5 @@
 <script>
-	import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
+	import Navbar from '$lib/molecules/navigation.svelte';
 	import Reactie from '$lib/components/reacties/reactie.svelte';
 	import Rollen from '$lib/components/detailpagina/rollen.svelte';
 	import Status from '$lib/components/status/[id]/+page.svelte';
