@@ -1,6 +1,6 @@
 # Hallo Strandeiland - Atomic Design
 
-![Uploading Schermafbeelding 2023-11-29 om 21.29.23.png…]()
+<img width="1352" alt="Schermafbeelding 2023-11-29 om 21 29 23" src="https://github.com/Stefan-Espant/dont-repeat-yourself-component-library/assets/89298385/50839b19-1974-4ae4-8476-015bd07444a7">
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
