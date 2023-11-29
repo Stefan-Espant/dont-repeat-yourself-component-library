@@ -6,6 +6,7 @@
 
 	export let data;
 
+	console.log(data);
 </script>
 
 <Navbar />
@@ -51,7 +52,6 @@
 		<p>{data.wish.description}</p>
 		<Rollen />
 		<Status />
-	
 	</section>
 	<Reactie />
 </main>
@@ -118,7 +118,7 @@
 	main > span {
 		font-size: 14px;
 	}
-	#rollen{
+	#rollen {
 		margin-left: 18%;
 	}
 </style>
