@@ -20,12 +20,28 @@ export async function load({ params }) {
     }
   `;
 
+  let query1 = gql`
+  query getStatus($id: ID!) {
+    statusUpdate(where: {id: $id}) {
+      date
+      comment {
+        html
+      }
+      uid
+      id
+    }
+  }
+  
+  `
   const variables = { id };
 
   const request = await hygraph.request(query, variables);
+  const request1 = await hygraph.request(query1, variables);
+
 
   return {
-      wish: request.wish // Hier halen we de enkele wens op
+      wish: request.wish, // Hier halen we de enkele wens op
+      statusupdate: request1.statusupdate
   };
 }
 

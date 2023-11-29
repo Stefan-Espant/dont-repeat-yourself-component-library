@@ -3,8 +3,8 @@
 	import Reactie from '$lib/components/reacties/reactie.svelte';
 	import Rollen from '$lib/components/detailpagina/rollen.svelte';
 	import Status from '$lib/components/status/[id]/+page.svelte';
-
 	export let data;
+	console.log(data)
 
 </script>
 
