@@ -5,7 +5,6 @@
 	import Status from '$lib/components/status/[id]/+page.svelte';
 
 	export let data;
-
 </script>
 
 <Navbar />
@@ -49,9 +48,14 @@
 			Geplaatst op: {data.wish.date}</time
 		>
 		<p>{data.wish.description}</p>
+
 		<Rollen />
+		<img
+			class="susDevGoal"
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sustainable_Development_Goal_01NoPoverty.svg/599px-Sustainable_Development_Goal_01NoPoverty.svg.png"
+			alt="sustainable development goal 1"
+		/>
 		<Status />
-	
 	</section>
 	<Reactie />
 </main>
@@ -118,7 +122,13 @@
 	main > span {
 		font-size: 14px;
 	}
-	#rollen{
+	#rollen {
 		margin-left: 18%;
+	}
+
+	/* Sustainable development goals */
+	.susDevGoal {
+		max-width: 100px;
+		max-height: 100px;
 	}
 </style>
