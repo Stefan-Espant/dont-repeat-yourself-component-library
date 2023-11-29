@@ -1,4 +1,6 @@
-# create-svelte
+# Hallo Strandeiland - Atomic Design
+
+![Uploading Schermafbeelding 2023-11-29 om 21.29.23.png…]()
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
