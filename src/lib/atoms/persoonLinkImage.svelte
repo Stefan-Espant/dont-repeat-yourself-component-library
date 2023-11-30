@@ -10,6 +10,7 @@
 
 <style>
     .linkedin-image {
+        margin-top: 1rem;
         width: 4rem;
         cursor: pointer;
 }

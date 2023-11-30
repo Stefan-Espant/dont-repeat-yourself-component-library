@@ -10,7 +10,7 @@
     .persoon_foto {
         align-self: center;
         border: 2px solid var(--color-primary);
-        width: 15rem;
-        height: 20rem;
+        width: 15.25rem;
+        height: 20.2rem;
 }
 </style>
