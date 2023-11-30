@@ -90,6 +90,12 @@ mark {
     color: var(--color-primary-50);
 }
 
+/* dropdown */
+
+.hide {
+    display: none;
+  }
+
 /* Zoekbalk */
 nav figcaption {
     width: 0;
