@@ -28,6 +28,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+@font-face {
+    font-family: "Poppins";
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,10 +41,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--color-accent-50);
+    background-color: var(--color-accent-75);
 }
 
 /* Interactief */
+a {
+    text-decoration: none;
+}
 
 a:hover, button:hover, input:hover {
     cursor: pointer;
@@ -82,8 +90,70 @@ mark {
     color: var(--color-primary-50);
 }
 
-/* Dropdown personen component  */
+/* Zoekbalk */
+nav figcaption {
+    width: 0;
+    visibility: hidden;
+}
 
-.hide {
-    display: none;
-  }
+#custom-view {
+    transition: var(--animation-default) ease-in-out;
+}
+
+/* Wensen in rasterweergave */
+.grid-overview article {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--unit-default);
+}
+
+.grid-overview li {
+    width: 20rem;
+}
+
+/* Wensen in lijstweergave */
+.list-overview article li {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: var(--unit-large);
+    padding: var(--unit-small);
+    margin-bottom: var(--unit-default);
+    border-bottom: 2px solid var(--color-accent-75);
+}
+
+.list-overview ul li img {
+    width: clamp(8rem, 100%, 10rem);
+}
+
+
+
+@media (min-width: 440px) {
+    .grid-overview article {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 500px) {
+    main {
+        width: 50rem;
+    }
+
+    .list-overview article li {
+        grid-template-columns: 12rem 1fr;
+        height: fit-content;
+        width: auto;
+      }
+}
+
+@media (min-width: 628px) {
+    .grid-overview article {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+    }
+
+    nav figcaption {
+        width: fit-content;
+        visibility: visible;
+    }
+}

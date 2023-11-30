@@ -1,4 +1,4 @@
-# Collaborating conventionss · Hallo Strandeiland
+# Collaborating conventions · Hallo Strandeiland
 
 ## Inhoudsopgave
 * Github

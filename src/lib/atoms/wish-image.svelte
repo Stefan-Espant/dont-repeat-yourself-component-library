@@ -11,7 +11,6 @@
         height: auto;
         aspect-ratio: 1/1;
         object-fit: cover;
-        border-radius: var(--unit-micro);
         margin-bottom: var(--unit-small);
     }
 </style>
