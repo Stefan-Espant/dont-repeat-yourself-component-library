@@ -14,5 +14,6 @@ export let data;
         p{
         font-size: 14px;
         padding-top: 3em;
+        padding-left: .5em;
     }
 </style>

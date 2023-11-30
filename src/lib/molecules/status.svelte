@@ -1,12 +1,12 @@
 <script>
 	import Statusdatum from '$lib/atoms/statusdatum.svelte';
     import Statuslabel from '$lib/atoms/statuslabel.svelte';
-
+    import Risico from '$lib/atoms/risico.svelte'
 	export let data;
 	// console.log(load.status);
 </script>
 <h2>Status wens</h2>
-
+<Risico />
 <section>
 
     <Statusdatum {data}/>
@@ -33,7 +33,6 @@
         padding: 1em;
         width: 100%;
         justify-content: space-between;
-        margin-top: 2em;
         align-items: center;
     }
     #circle{

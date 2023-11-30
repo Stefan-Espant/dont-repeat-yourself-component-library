@@ -1,5 +1,5 @@
 <script>
-	import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
+	import Navbar from '$lib/molecules/navigation.svelte';
 	import Reactie from '$lib/components/reacties/reactie.svelte';
 	import Rollen from '$lib/components/detailpagina/rollen.svelte';
 	import Status from '$lib/molecules/status.svelte';
@@ -8,6 +8,7 @@
 	export let data;
 	export const test = writable(1);
 
+	console.log(data);
 </script>
 
 <Navbar />
@@ -51,6 +52,18 @@
 			Geplaatst op: {data.wish.date}</time
 		>
 		<p>{data.wish.description}</p>
+		<section class="container-susDevGoal">
+			<img
+				class="susDevGoal"
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sustainable_Development_Goal_01NoPoverty.svg/599px-Sustainable_Development_Goal_01NoPoverty.svg.png"
+				alt="sustainable development goal 1"
+			/>
+			<img
+				class="susDevGoal"
+				src="https://www.hydro.com/globalassets/04-sustainability/sustainability-new/e_web_16.png?quality=85&rmode=crop&rsampler=bicubic&rxy=0.5,0.5&compand=true"
+				alt="sustainable development goal 1"
+			/>
+		</section>
 		<Rollen />
 		<Status {data} />
 
@@ -120,7 +133,19 @@
 	main > span {
 		font-size: 14px;
 	}
-	#rollen{
+	#rollen {
 		margin-left: 18%;
+	}
+
+	/* Sustainable development goals */
+	.susDevGoal {
+		max-width: 100px;
+		max-height: 100px;
+		margin: 1em;
+	}
+	.container-susDevGoal {
+		display: flex;
+		flex-direction: row;
+		margin-left: 2em;
 	}
 </style>

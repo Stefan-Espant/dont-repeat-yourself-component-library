@@ -16,7 +16,8 @@
         padding: 1em;
         font-size: 14px;
         width: 20em;
-        margin-top: 1em
+        margin-top: 1em;
+        background-color: rgb(247, 247, 247);
     }
     p:nth-of-type(2){
         border-color: rgb(8, 196, 8);
