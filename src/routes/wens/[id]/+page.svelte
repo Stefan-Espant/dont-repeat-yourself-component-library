@@ -2,9 +2,11 @@
 	import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
 	import Reactie from '$lib/components/reacties/reactie.svelte';
 	import Rollen from '$lib/components/detailpagina/rollen.svelte';
-	import Status from '$lib/components/status/[id]/+page.svelte';
+	import Status from '$lib/molecules/status.svelte';
+	import { writable } from 'svelte/store';
+
 	export let data;
-	console.log(data)
+	export const test = writable(1);
 
 </script>
 
@@ -50,8 +52,8 @@
 		>
 		<p>{data.wish.description}</p>
 		<Rollen />
-		<Status />
-	
+		<Status {data} />
+
 	</section>
 	<Reactie />
 </main>

@@ -1,6 +1,5 @@
 import { gql } from 'graphql-request';
 import { hygraph } from '$lib/utils/hygraph.js';
-import { GraphQLClient } from 'graphql-request';
 
 export async function load({ params }) {
   const { id } = params;
@@ -17,33 +16,29 @@ export async function load({ params }) {
           url
         }
       }
+      statusUpdates {
+        date
+        comment {
+          text
+        }
+        uid
+        id
+      }
     }
   `;
 
-  let query1 = gql`
-  query getStatus($id: ID!) {
-    statusUpdate(where: {id: $id}) {
-      date
-      comment {
-        html
-      }
-      uid
-      id
-    }
-  }
-  
-  `
+
   const variables = { id };
 
   const request = await hygraph.request(query, variables);
-  const request1 = await hygraph.request(query1, variables);
-
 
   return {
+  
       wish: request.wish, // Hier halen we de enkele wens op
-      statusupdate: request1.statusupdate
+      statusupdates: request.statusUpdates
   };
 }
+
 
 // export async ({ body }, res) => {
 //   const hygraph = new GraphQLClient(
