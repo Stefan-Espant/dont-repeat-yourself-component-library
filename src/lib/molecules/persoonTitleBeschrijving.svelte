@@ -23,7 +23,7 @@
     .persoon_beschrijving {
 align-self: center;
 margin-top: 1rem;
-width: 15rem;
+width: 16rem;
 }
 
 .beschrijving_titel {
