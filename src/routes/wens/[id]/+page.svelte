@@ -50,6 +50,28 @@
 			Geplaatst op: {data.wish.date}</time
 		>
 		<p>{data.wish.description}</p>
+		<a href="https://sdgs.un.org/goals">
+			<h1 class="header-susGoals">Behaalde sustainable development goals</h1>
+		</a>
+
+		<section class="container-susDevGoal">
+			<img
+				class="susDevGoal"
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sustainable_Development_Goal_01NoPoverty.svg/599px-Sustainable_Development_Goal_01NoPoverty.svg.png"
+				alt="sustainable development goal 1"
+			/>
+			<img
+				class="susDevGoal"
+				src="https://www.hydro.com/globalassets/04-sustainability/sustainability-new/e_web_16.png?quality=85&rmode=crop&rsampler=bicubic&rxy=0.5,0.5&compand=true"
+				alt="sustainable development goal 1"
+			/>
+			<img
+				class="susDevGoal"
+				src="https://www.hydro.com/globalassets/04-sustainability/sustainability-new/un15.png?quality=85&rmode=crop&rsampler=bicubic&rxy=0.5,0.5&compand=true"
+				alt="sustainable development goal 1"
+			/>
+		</section>
+		<Rollen />
 
 		<Rollen />
 		<img
@@ -133,4 +155,10 @@
 		max-width: 100px;
 		max-height: 100px;
 	}
+
+	.header-susGoals {
+		padding: 2em;
+	}
+
+	
 </style>
