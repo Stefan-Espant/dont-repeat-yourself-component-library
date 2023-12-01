@@ -51,7 +51,7 @@ Voor dit project is gebruikgemaakt van:
 ## Bronnen
 * [Code conventions](https://mbo-sd.nl/lesson/javascript/start/code-convention)
 * [Emojipedia](https://emojipedia.org/antenna-bars)
-* [Hosting]([https://vercel.com](https://app.netlify.com))
+* [Hosting](https://app.netlify.com))
 
 ## Gebruik
 Dit platform is bedoelt om wensen op te halen van bewoners.
