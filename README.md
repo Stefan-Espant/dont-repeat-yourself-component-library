@@ -49,9 +49,13 @@ Voor dit project is gebruikgemaakt van:
 6. Voor dit project is gebruik gemaakt van een .env bestand om data op te kunnen halen uit Hygraph.
 
 ## Bronnen
+* [Instructions](./docs/INSTRUCTIONS.md)
 * [Code conventions](https://mbo-sd.nl/lesson/javascript/start/code-convention)
 * [Emojipedia](https://emojipedia.org/antenna-bars)
 * [Hosting](https://app.netlify.com)
 
 ## Gebruik
 Dit platform is bedoelt om wensen op te halen van bewoners.
+
+## Licentie
+This project is licensed under the terms of the [MIT license](./LICENSE).
