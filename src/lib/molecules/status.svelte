@@ -10,7 +10,7 @@
 <section>
 
     <Statusdatum {data}/>
-    <div>
+    <div title="status line container">
     {#each data.statusupdates as statusupdate}
 
         <span id="circle"></span>

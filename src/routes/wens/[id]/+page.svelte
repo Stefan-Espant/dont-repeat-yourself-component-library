@@ -148,4 +148,20 @@
 		flex-direction: row;
 		margin-left: 2em;
 	}
+	@media screen and (width < 600px) {
+		section {
+			width: 20em;
+		}
+	}
+	@media screen and (width < 665px) {
+		section {
+			width: 25em;
+		}
+	}
+	@media screen and (width < 765px) {
+		section {
+			max-width: 30em;
+		}
+	}
+
 </style>
