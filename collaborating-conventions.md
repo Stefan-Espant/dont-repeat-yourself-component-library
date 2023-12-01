@@ -45,6 +45,7 @@ Zo schrijven we gezamelijk aan de readme.
 
 ### Readme
 De Readme is het eerste wat de gebruiker ziet zodra die de repository opent. 
+Daarom schrijven we beknopt wat het project inhoud, waar er gebruik van is gemaakt en hoe een andere ontwikkelaar ermee aan de slag kan.
 
 ### Wiki
 Iedereen schrijft zijn eigen wiki volgends de Dev-life cycle. Per activiteit word dezelfde opmaak gehanteerd:
