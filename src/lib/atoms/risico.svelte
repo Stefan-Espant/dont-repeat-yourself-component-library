@@ -5,6 +5,7 @@
 <style>
     img{
         height: 30px;
+        width: 2em;
         margin-left: 1em;
     }
     p{
