@@ -48,5 +48,10 @@ Voor dit project is gebruikgemaakt van:
 5. Start een server met ```npm dev start```.
 6. Voor dit project is gebruik gemaakt van een .env bestand om data op te kunnen halen uit Hygraph.
 
+## Bronnen
+* [Code conventions](https://mbo-sd.nl/lesson/javascript/start/code-convention)
+* [Emojipedia](https://emojipedia.org/antenna-bars)
+* [Hosting]([https://vercel.com](https://app.netlify.com))
+
 ## Gebruik
 Dit platform is bedoelt om wensen op te halen van bewoners.
