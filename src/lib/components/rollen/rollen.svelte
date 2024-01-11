@@ -18,18 +18,30 @@
 		count++;
 		output.innerHTML = count;
 		document.getElementById('text').style.display = 'flex';
+
+		setTimeout(() => {
+			text.remove();
+		}, 4000);
 	}
 	function countClicks2() {
 		count2++;
 		output2.innerHTML = count2;
 
-		document.getElementById('text').style.display = 'flex';
+		document.getElementById('text2').style.display = 'flex';
+
+		setTimeout(() => {
+			text2.remove();
+		}, 4000);
 	}
 	function countClicks3() {
 		count3++;
 		output3.innerHTML = count3;
 
-		document.getElementById('text').style.display = 'flex';
+		document.getElementById('text3').style.display = 'flex';
+
+		setTimeout(() => {
+			text3.remove();
+		}, 4000);
 	}
 
 	onMount(() => {
@@ -37,9 +49,9 @@
 		output = document.getElementById('output');
 		output2 = document.getElementById('output2');
 		output3 = document.getElementById('output3');
-		
+
 		buttonList = document.querySelectorAll('.button');
-		console.log('output:', output)
+		console.log('output:', output);
 		console.log('buttonList:', buttonList);
 		// Voegt class toe
 		buttonList.forEach((button) => {
@@ -61,20 +73,30 @@
 	/>
 
 	<article class="rollen">
-		<p id="text">Jou rol is opgeslagen!</p>
-		<div class="btn" id="mydiv">
-			<button on:click={countClicks} id="wens" class="button" class:active={activeId == 'wens'}
-				>Ik deel deze wens</button
-			>
-			<button on:click={countClicks2} id="helpen" class="button" class:active={activeId == 'helpen'}
-				>Ik wil helpen</button
-			>
-			<button
-				on:click={countClicks3}
-				id="trekken"
-				class="button"
-				class:active={activeId == 'trekken'}>Ik wil trekker zijn</button
-			>
+		<ul class="notifications"></ul>
+		<div class="buttons">
+			<div class="test">
+				<p id="text">Jouw rol als deler is opgeslagen!</p>
+				<p id="text2">Jouw rol als helper is opgeslagen!</p>
+				<p id="text3">Jouw rol als trekker is opgeslagen!</p>
+			</div>
+			<div class="btn" id="mydiv">
+				<button on:click={countClicks} id="wens" class="button" class:active={activeId == 'wens'}
+					>Ik deel deze wens</button
+				>
+				<button
+					on:click={countClicks2}
+					id="helpen"
+					class="button"
+					class:active={activeId == 'helpen'}>Ik wil helpen</button
+				>
+				<button
+					on:click={countClicks3}
+					id="trekken"
+					class="button"
+					class:active={activeId == 'trekken'}>Ik wil trekker zijn</button
+				>
+			</div>
 		</div>
 	</article>
 
@@ -95,21 +117,59 @@
 </section>
 
 <style>
-	.bold{
+	.bold {
 		font-weight: 700;
 	}
-	.rollen{
+	.rollen {
 		align-items: 'center';
 	}
-	#text {
+	#text,
+	#text2,
+	#text3 {
 		display: none;
 		background-color: lightgreen;
 		justify-content: center;
 		font-weight: 600;
-		font-size: 1.2em;
+		font-size: 1em;
 		align-items: center;
 		margin-bottom: 15px;
-		height: 100px;
+		height: 75px;
+		position: relative;
+	}
+	#text::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 5px;
+		background: green;
+		animation: lijn 4s linear forwards;
+	}
+	#text2::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 5px;
+		background: green;
+		animation: lijn 4s linear forwards;
+	}
+	#text3::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 5px;
+		background: green;
+		animation: lijn 4s linear forwards;
+	}
+	@keyframes lijn {
+		100% {
+			width: 0;
+		}
 	}
 	article {
 		padding: 1em 0 1em 0;
